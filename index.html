@@ -3,6 +3,28 @@
 <head>
 <title>WEB1 - Welcome</title>
 <meta charset = "utf-8">
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        console.log("Script is running");
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // iOS detection
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            console.log("iOS device detected");
+            window.location.href = "your-ios-app-scheme://path"; // iOS 딥 링크
+        }
+        // Android detection
+        else if (/android/i.test(userAgent)) {
+            console.log("Android device detected");
+            window.location.href = "intent://sdajfaei.github.io#Intent;scheme=https;package=io.ecocentre.app;end"; // 안드로이드 딥 링크
+        }
+        // Fallback for other devices
+        else {
+            console.log("Other device detected");
+            window.location.href = "https://sdajfaei.github.io"; // 웹 페이지 폴백
+        }
+    });
+</script>
 </head>
 
 <body>
