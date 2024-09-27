@@ -3,24 +3,6 @@
 <head>
 <title>WEB1 - HTML</title>
 <meta charset = "utf-8">
-  <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-            // iOS detection
-            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                window.location.href = "your-ios-app-scheme://path"; // iOS 딥 링크
-            }
-            // Android detection
-            else if (/android/i.test(userAgent)) {
-                window.location.href = "intent://sdajfaei.github.io#Intent;scheme=https;package=io.ecocentre.app;end"; // 안드로이드 딥 링크
-            }
-            // Fallback for other devices
-            else {
-                window.location.href = "https://sdajfaei.github.io"; // 웹 페이지 폴백
-            }
-        });
-    </script>
 </head>
 
 <body>
