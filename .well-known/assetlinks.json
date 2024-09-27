@@ -5,15 +5,6 @@
       "namespace": "android_app",
       "package_name": "io.ecocentre.app",
       "sha256_cert_fingerprints":
-        ["7D:D7:FE:A9:A4:F1:39:30:07:37:06:8B:57:81:04:0E:C9:66:AF:36:A6:85:63:9E:4D:59:00:F6:3A:50:AE:27"]
-    }
-  },
-  {
-    "relation": ["delegate_permission/common.handle_all_urls"],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "io.ecocentre.app",
-      "sha256_cert_fingerprints":
         ["78:3C:FD:25:19:E0:C7:56:FB:45:45:31:F6:2A:92:CC:72:40:9D:DC:56:43:8D:20:CE:67:89:CE:D5:67:51:92"]
     }
   }
