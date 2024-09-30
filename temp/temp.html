@@ -26,12 +26,13 @@
         var appStoreURL = "https://apps.apple.com/app/id6471475390"; // App Store URL
 
         // 앱 실행 시도
-        var now = new Date().getTime();
-        setTimeout(function() {
-          if (new Date().getTime() - now < 2000) {
-            window.location.href = appStoreURL; // App Store로 리디렉션
-          }
-        }, 1500);
+        // var now = new Date().getTime();
+        // setTimeout(function() {
+        //   if (new Date().getTime() - now < 2000) {
+        //     window.location.href = appStoreURL; // App Store로 리디렉션
+        //   }
+        // }, 1500);
+        window.location.href = appStoreURL;
       }
       // Android detection
       else if (/android/i.test(userAgent)) {
