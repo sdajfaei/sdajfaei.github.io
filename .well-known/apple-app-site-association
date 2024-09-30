@@ -6,9 +6,12 @@
         "appIDs": [
           "BR92SJA7VJ.io.ecocentre.app"
         ],
+        "page": [
+          "/": "/app/"
+        ],
         "components": [
           {
-            "/": "/app"
+            "/": "/app/"
           }
         ]
       }
