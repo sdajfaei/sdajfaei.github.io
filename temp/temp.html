@@ -26,13 +26,12 @@
         var appStoreURL = "https://apps.apple.com/app/id6471475390"; // App Store URL
 
         // 앱 실행 시도
-        // var now = new Date().getTime();
-        // setTimeout(function() {
-        //   if (new Date().getTime() - now < 2000) {
-        //     window.location.href = appStoreURL; // App Store로 리디렉션
-        //   }
-        // }, 1500);
-        window.location.href = appStoreURL;
+        var now = new Date().getTime();
+        setTimeout(function() {
+          if (new Date().getTime() - now < 2000) {
+            window.location.href = appStoreURL; // App Store로 리디렉션
+          }
+        }, 1500);
       }
       // Android detection
       else if (/android/i.test(userAgent)) {
@@ -54,7 +53,7 @@
   <br>
   <img src="https://www.huaweicentral.com/wp-content/uploads/2023/03/play-store-img2.jpg" alt="Google Store" width="300" height="200" onclick="appLink()">
   <br>
-  <h4 style="font-size: 24px;"><a href="httpssdajfaei.github.io/app://">Open Apple App with Deep Link</a></h4>
+  <h4 style="font-size: 24px;"><a href="https://apps.apple.com/app/id6471475390">Open Apple App with Deep Link</a></h4>
   <hr>
   <br>
   <img src="https://e7.pngegg.com/pngimages/274/964/png-clipart-app-store-mobile-app-apple-app-store-button-white-text-rectangle.png" alt="Google Store" width="300" height="200" onclick="appLink()">
