@@ -1,48 +1,38 @@
-<!doctype html>
-<html>
-<head>
-<title>WEB1 - Welcome</title>
-<meta charset = "utf-8">
-<!-- <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        console.log("Script is running");
-        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+<!DOCTYPE html>
+<html lang="en">
 
-        // iOS detection
-        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-            console.log("iOS device detected");
-            window.location.href = "your-ios-app-scheme://path"; // iOS 딥 링크
-        }
-        // Android detection
-        else if (/android/i.test(userAgent)) {
-            console.log("Android device detected");
-            window.location.href = "intent://sdajfaei.github.io#Intent;scheme=https;package=io.ecocentre.app;end"; // 안드로이드 딥 링크
-        }
-        // Fallback for other devices
-        else {
-            console.log("Other device detected");
-            window.location.href = "https://sdajfaei.github.io"; // 웹 페이지 폴백
-        }
-    });
-</script> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URI Scheme Deep Link Example</title>
 </head>
 
 <body>
-  <h1><a href="index.html">WEB</h1></a>
-<ol>
-  <li><a href="11.html">HTML</li></a>
-  <li><a href="12.html">CSS</li></a>
-  <li><a href="13.html">JavaScript</li></a>
-  <li><a href="intent://sdajfaei.github.io#Intent;scheme=https;package=io.ecocentre.app;end">Open App</li></a>
-  <li><a href="intent://sdajfaei.github.io/app/#Intent;scheme=https;package=io.ecocentre.app;end">Open App1</li></a>
-    <li><a href="intent://sdajfaei.github.io#Intent;scheme=https;package=io.ecocentre.app;pathPrefix=/app_linkend">Open App2</li></a>
-</ol>
+    <script>
+        function appLink() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-<h2>WEB</h2>
-<p>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.    
-</p>
-<p>If you are not redirected automatically, follow this <a href="https://sdajfaei.github.io">link</a>.</p>
-<p>If you are not redirected automatically, follow this <a href="https://sdajfaei.github.io/app/">link</a>.</p>
+            // iOS detection
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                console.log("iOS device detected");
+                window.location.href = "your-ios-app-scheme://path"; // iOS 딥 링크
+            }
+            // Android detection
+            else if (/android/i.test(userAgent)) {
+                console.log("Android device detected");
+                window.location.href = "intent://sdajfaei.github.io#Intent;scheme=https;package=io.ecocentre.app;pathPrefix=/app/;end"; // 안드로이드 딥 링크
+            }
+            // Fallback for other devices
+            else {
+                console.log("Other device detected");
+                window.location.href = "https://sdajfaei.github.io"; // 웹 페이지 폴백
+            }
+        }
+    </script>
 
+    <h1>URI Scheme Deep Link Example</h1>
+    <a href="myapp://section/page?param1=value1&param2=value2">Open App with Deep Link</a>
+    <img src="https://www.huaweicentral.com/wp-content/uploads/2023/03/play-store-img2.jpg" alt="Google Store" onclick="myFunction()">
 </body>
+
 </html>
