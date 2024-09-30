@@ -7,7 +7,7 @@
           "BR92SJA7VJ.io.ecocentre.app"
         ],
         "paths": [
-          "*"
+          "/app"
         ],
         "components": [
           {
