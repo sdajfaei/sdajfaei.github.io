@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URI Scheme Deep Link Example</title>
+    <style>
+        /* 스타일 추가 */
+        h4 {
+            font-size: 24px; /* 원하는 글자 크기로 설정 (예: 24px) */
+        }
+    </style>
 </head>
 
 <body>
@@ -20,7 +26,7 @@
             // Android detection
             else if (/android/i.test(userAgent)) {
                 console.log("Android device detected");
-                window.location.href = "intent://sdajfaei.github.io#Intent;scheme=https;package=io.ecocentre.app;pathPrefix=/app/;end"; // 안드로이드 딥 링크
+                window.location.href = "intent://sdajfaei.github.io/app/#Intent;scheme=https;package=io.ecocentre.app;end"; // 안드로이드 딥 링크
             }
             // Fallback for other devices
             else {
@@ -32,7 +38,8 @@
 
     <h1>URI Scheme Deep Link Example</h1>
     <br>
-    <a href="intent://sdajfaei.github.io/app/#Intent;scheme=https;package=io.ecocentre.app;end">Open App with Deep Link</a>
+    <h4 style="font-size: 24px;"><a href="intent://sdajfaei.github.io/app/#Intent;scheme=https;package=io.ecocentre.app;end">Open App with Deep Link</a></h4>
+    <hr>
     <br>
     <img src="https://www.huaweicentral.com/wp-content/uploads/2023/03/play-store-img2.jpg" alt="Google Store" onclick="appLink()">
 </body>
