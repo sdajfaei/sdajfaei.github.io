@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "BR92SJA7VJ.io.ecocentre.app"
+        ],
+        "components": [
+          {
+            "/": "/app/*",
+          }
+        ]
+      }
+    ]
+  },
+}
