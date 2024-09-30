@@ -26,7 +26,7 @@
             // Android detection
             else if (/android/i.test(userAgent)) {
                 console.log("Android device detected");
-                window.location.href = "intent://sdajfaei.github.io/app/#Intent;scheme=https;package=io.ecocentre.app;end"; // 안드로이드 딥 링크
+                window.location.href = "intent://sdajfaei.github.io/app/?id=123#Intent;scheme=https;package=io.ecocentre.app;end"; // 안드로이드 딥 링크
             }
             // Fallback for other devices
             else {
@@ -38,7 +38,7 @@
 
     <h1>URI Scheme Deep Link Example</h1>
     <br>
-    <h4 style="font-size: 24px;"><a href="intent://sdajfaei.github.io/app/#Intent;scheme=https;package=io.ecocentre.app;end">Open App with Deep Link</a></h4>
+    <h4 style="font-size: 24px;"><a href="intent://sdajfaei.github.io/app/?id=123#Intent;scheme=https;package=io.ecocentre.app;end">Open App with Deep Link</a></h4>
     <hr>
     <br>
     <img src="https://www.huaweicentral.com/wp-content/uploads/2023/03/play-store-img2.jpg" alt="Google Store" onclick="appLink()">
