@@ -12,12 +12,12 @@
       // iOS detection
       if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         console.log("iOS device detected");
-        window.location.href = "https://naver.com"; // iOS 기기일 때 리디렉션할 URL
+        window.location.href = "https://apps.apple.com/app/id6471475390"; // iOS 기기일 때 리디렉션할 URL
       }
       // Android detection
       else if (/android/i.test(userAgent)) {
         console.log("Android device detected");
-        window.location.href = "https://google.com"; // 안드로이드 기기일 때 리디렉션할 URL
+        window.location.href = "https://play.google.com/store/apps/details?id=io.ecocentre.app"; // 안드로이드 기기일 때 리디렉션할 URL
       }
       // Fallback for other devices
       else {
@@ -32,8 +32,8 @@
   <h1>Device Based Redirection</h1>
   <p>If you are not redirected automatically, follow the appropriate link:</p>
   <ul>
-    <li><a href="https://google.com">Google (Android)</a></li>
-    <li><a href="https://naver.com">Naver (iOS)</a></li>
+    <li><a href="https://play.google.com/store/apps/details?id=io.ecocentre.app">Google Store (Android)</a></li>
+    <li><a href="https://apps.apple.com/app/id6471475390">App Market (iOS)</a></li>
   </ul>
 </body>
 
