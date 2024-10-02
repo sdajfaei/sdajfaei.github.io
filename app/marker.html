@@ -1,32 +1,40 @@
-<?php
-$user_agent = $_SERVER['HTTP_USER_AGENT'];
-
-// 안드로이드 기기인 경우
-if (strpos($user_agent, 'Android') !== false) {
-    header('Location: https://www.naver.com');
-    exit;
-}
-// 아이폰 기기인 경우
-else if (strpos($user_agent, 'iPhone') !== false) {
-    header('Location: https://www.naver.com');
-    exit;
-} else {
-    // 다른 기기인 경우 기본적으로 Google 페이지로 리디렉션
-    header('Location: https://www.naver.com');
-    exit;
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=https://www.google.com"> <!-- 0초 후 구글 사이트로 리디렉션 -->
-    <title>Redirecting to Google</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device Based Redirection</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // iOS detection
+      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        console.log("iOS device detected");
+        window.location.href = "https://naver.com"; // iOS 기기일 때 리디렉션할 URL
+      }
+      // Android detection
+      else if (/android/i.test(userAgent)) {
+        console.log("Android device detected");
+        window.location.href = "https://google.com"; // 안드로이드 기기일 때 리디렉션할 URL
+      }
+      // Fallback for other devices
+      else {
+        console.log("Other device detected");
+        // 다른 기기일 때 리디렉션할 URL을 설정할 수 있습니다.
+      }
+    });
+  </script>
 </head>
 
 <body>
-    <p>If you are not redirected to Google, <a href="https://www.google.com">click here</a>.</p>
+  <h1>Device Based Redirection</h1>
+  <p>If you are not redirected automatically, follow the appropriate link:</p>
+  <ul>
+    <li><a href="https://google.com">Google (Android)</a></li>
+    <li><a href="https://naver.com">Naver (iOS)</a></li>
+  </ul>
 </body>
 
 </html>
