@@ -1,0 +1,32 @@
+<?php
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
+
+// 안드로이드 기기인 경우
+if (strpos($user_agent, 'Android') !== false) {
+    header('Location: https://www.google.com');
+    exit;
+}
+// 아이폰 기기인 경우
+else if (strpos($user_agent, 'iPhone') !== false) {
+    header('Location: https://www.naver.com');
+    exit;
+} else {
+    // 다른 기기인 경우 기본적으로 Google 페이지로 리디렉션
+    header('Location: https://www.google.com');
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url=https://www.google.com"> <!-- 0초 후 구글 사이트로 리디렉션 -->
+    <title>Redirecting to Google</title>
+</head>
+
+<body>
+    <p>If you are not redirected to Google, <a href="https://www.google.com">click here</a>.</p>
+</body>
+
+</html>
