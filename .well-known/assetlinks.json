@@ -1,11 +1,15 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "sigmachain.app.pikitalk",
-      "sha256_cert_fingerprints":
-        ["FD:C9:A4:9A:F0:2B:48:7D:9B:B2:FE:3E:96:E2:05:A8:D1:1C:78:FD:89:A7:95:99:04:7A:9D:FF:D6:AB:9A:14"]
+      "sha256_cert_fingerprints": [
+        "FD:C9:A4:9A:F0:2B:48:7D:9B:B2:FE:3E:96:E2:05:A8:D1:1C:78:FD:89:A7:95:99:04:7A:9D:FF:D6:AB:9A:14"
+      ]
     }
   }
 ]
