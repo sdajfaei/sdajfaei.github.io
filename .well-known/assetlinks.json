@@ -3,11 +3,11 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "sigmachain.app.pikitalk",
+      "package_name": "com.example.deeplink.test_deep_link",
       "sha256_cert_fingerprints":
-        ["FD:C9:A4:9A:F0:2B:48:7D:9B:B2:FE:3E:96:E2:05:A8:D1:1C:78:FD:89:A7:95:99:04:7A:9D:FF:D6:AB:9A:14",
-        "7D:D7:FE:A9:A4:F1:39:30:07:37:06:8B:57:81:04:0E:C9:66:AF:36:A6:85:63:9E:4D:59:00:F6:3A:50:AE:27",
-        "78:3C:FD:25:19:E0:C7:56:FB:45:45:31:F6:2A:92:CC:72:40:9D:DC:56:43:8D:20:CE:67:89:CE:D5:67:51:92"]
+        [
+        "26:5F:81:2A:D4:F5:C5:02:B0:AC:D0:F8:9E:BF:5D:FF:B5:F6:CF:66:C7:8E:CB:7B:1:CB:7B:17:5D:63:D0:21:47:B8:EF"
+        ]
     }
   }
 ]
