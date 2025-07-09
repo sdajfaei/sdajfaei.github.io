@@ -6,7 +6,9 @@
       "package_name": "sigmachain.app.pikitalk",
       "sha256_cert_fingerprints":
         [
-        "F7:DA:87:74:C2:FB:39:F3:3B:25:A9:B5:0C:28:33:45:03:B1:05:EE:37:6E:28:EB:3C:0E:C0:2A:3D:B9:BC:3F"
+          "FD:C9:A4:9A:F0:2B:48:7D:9B:B2:FE:3E:96:E2:05:A8:D1:1C:78:FD:89:A7:95:99:04:7A:9D:FF:D6:AB:9A:14",
+          "F7:DA:87:74:C2:FB:39:F3:3B:25:A9:B5:0C:28:33:45:03:B1:05:EE:37:6E:28:EB:3C:0E:C0:2A:3D:B9:BC:3F",
+          "10:DD:0C:8F:84:3A:26:AC:E7:3F:D6:0F:3A:F2:D4:19:2B:39:F5:68:B9:13:03:4F:0B:BC:4B:9B:BB:26:F8:E4"
         ]
     }
   }
