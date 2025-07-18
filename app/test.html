@@ -58,12 +58,12 @@
   <hr>
   <br>
   <img src="app://assets/room/weathered_planks_diff_2k.jpg" alt="Google Store" width="300" height="200" onclick="appLink()">
-  <source src="app://assets/room/sky_hdri.hdr" alt="SKY" width="300" height="200" onclick="appLink()">
-    <script>
-    // RGBELoader를 사용하여 HDR 로드
-    new RGBELoader().load("app://assets/room/sky_hdri.hdr", (texture) => {
-        // Three.js 씬에 적용하는 로직
-    });
+  
+  <!-- HDR 파일 (직접 사용 드물지만 테스트 가능) -->
+  <img src="app://assets/room/background/sky_hdri.hdr" onerror="console.error('HDR load failed')">
+
+  <!-- GLB 파일 -->
+  <object data="app://assets/models/example.glb" type="model/gltf-binary"></object>
 </script>
 
 <h1>URI TEST END NOW</h1>
