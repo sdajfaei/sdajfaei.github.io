@@ -58,7 +58,13 @@
   <hr>
   <br>
   <img src="app://assets/room/weathered_planks_diff_2k.jpg" alt="Google Store" width="300" height="200" onclick="appLink()">
-  <a src="app://assets/room/sky_hdri.hdr" alt="Google Store" width="300" height="200" onclick="appLink()">
+  <model-viewer src="app://assets/room/sky_hdri.hdr" alt="Google Store" width="300" height="200" onclick="appLink()">
+    <script>
+    // RGBELoader를 사용하여 HDR 로드
+    new RGBELoader().load("app://assets/room/sky_hdri.hdr", (texture) => {
+        // Three.js 씬에 적용하는 로직
+    });
+</script>
 </body>
 
 </html>
