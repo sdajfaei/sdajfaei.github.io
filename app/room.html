@@ -2208,12 +2208,6 @@
                         <!--	텍스트 변경		-->
                         ‘닉네임’님이 ‘닉네임’님을 방으로 초대했습니다.
                     </div>
-					<div class="img">
-<!-- 					 <img src="app://assets/room/stony_dirt_path_diff_2k.jpg" alt="초대 아이콘" style="width: 24px; height: 24px; margin-bottom: 8px;"> -->
-					 <img src="app://assets/room/stony_dirt_path_diff_2k.jpg" alt="초대 아이콘" style="width: 240px; height: 240px; margin-bottom: 8px;">
-
-					 </div>
-
                     <!--	방 초대할때만 button 표출	-->
                     <button>방문하기</button>
                 </div>
@@ -6724,6 +6718,7 @@ NPC 모션을 설정하시겠습니까?
                 // const texture = new THREE.TextureLoader().load('/assets/js/metaroom/background/sky1_hdri.jpg');
 
                 let rgbLoaderTarget= '/assets/js/metaroom/background/sky_hdri.hdr';
+				console.log('## view_style = ' + view_style);
                 if(view_style === 'mobile') {
                     const skyFileEl = document.getElementById('sky_hdri');
                     rgbLoaderTarget = skyFileEl.getAttribute('src');
